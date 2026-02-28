@@ -7,7 +7,7 @@ For my final Bachelor Biotechnology Project, I was tasked to do a positive selec
 
 For this analysis, I used Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.9. to detect any site-specific positive selection (Yang et al. 2005; Yang 2007). To detect which site is positively selected, model = 0 (single dN/dS ratio (ω) is assumed for all branches), and Site models = M7 (beta) and M8 (beta & ω > 1) were used as the site model. Other parameters were set to default. Posterior probabilities that are significant (p > 0.05) was selected as a candidate for detecting SNP marker (Xiong et al. 2023). 
 
-## List of Begonia Species
+### List of Begonia Species
 
 1.	"NC_063512.1" : "Begonia arachnoidea"
 2.	"NC_065014.1" : "Begonia asteropyrifolia"
@@ -69,7 +69,7 @@ For this analysis, I used Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.
 58.	"NC_070326.1" : "Begonia microsperma voucher Peng20259"
 59.	"NC_070328.1" : "Begonia oxyloba voucher RBGE19982761"
 
-## List of Begonia Species from Bogor Botanic Gardens
+### List of Begonia Species from Bogor Botanic Gardens
 1. Begonia cucullata
 2. Begonia mexicana
 3. Begonia hijauvenia
@@ -77,6 +77,10 @@ For this analysis, I used Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.
 5. Begonia Eternal Flames (B. hijauvenia ♀ × B. kudoensis ♂)
 6. Begonia isoptera
 7. Begonia Silver Pixie (Gamma-iradiated Begonia isoptera)
+
+## Methods
+
+## Results and Discussion
 
 ## References
 Xiong C, Huang Y, Li Z, Wu L, Liu Z, Zhu W, Li J, Xu R, Hong X. 2023. Comparative chloroplast genomics reveals the phylogeny and the adaptive evolution of Begonia in China. BMC Genomics. 24(1). DOI:10.1186/s12864-023-09563-3. https://pubmed.ncbi.nlm.nih.gov/37891463/ 
