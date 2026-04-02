@@ -1,0 +1,37 @@
+*Source: http://github.com/abacus-gene/paml-tutorial*
+
+# Clone this repo: git clone https://github.com/abacus-gene/paml.git
+git clone https://github.com/abacus-gene/paml.git
+
+# Move to the cloned repository. Make sure you have cloned it in the correct
+# location of your local disk.
+cd paml
+# If there are executable files for Windows, you may remove them.
+rm bin/*.exe
+# Move to the `src` directory to compile the software.
+cd src
+make -f Makefile
+# List all the compiled programs that are part of PAML and
+# remove unnecessary files.
+ls -lF
+rm *.o
+# Create a `bin` directory, which you can then export to your PATH.
+mkdir ../bin
+# Move the compiled programs to `bin`.
+mv baseml basemlg chi2 codeml evolver infinitesites mcmctree pamp yn00 ../bin
+# Test that you can run some PAML programs such as BASEML, CODEML, or evolver.
+bin/baseml
+bin/codeml
+bin/evolver
+
+# Edit /workspaces/Bioinformatics_Portfolio_Rafael8803/paml/src/codeml.ctl
+cd /workspaces/Bioinformatics_Portfolio_Rafael8803/paml/src/
+nano codeml.ctl 
+
+# Execute codeml
+codeml.ctl 
+
+*References*:
+Jeffares DC, Tomiczek B, Sojo V, dos Reis M (2015). A Beginners Guide to Estimating the Non-synonymous to Synonymous Rate Ratio of all Protein-Coding Genes in a Genome. In: Peacock, C. (eds) Parasite Genomics Protocols. Methods in Molecular Biology, vol 1201. Humana Press, New York, NY..
+Yang, Z (1997). PAML: a program package for phylogenetic analysis by maximum likelihood. Comput. Appl. Biosci. 13, 555-556.
+Yang, Z (2007). PAML 4: Phylogenetic Analysis by Maximum Likelihood. Mol. Biol. Evol. 24, 1586-1591.
