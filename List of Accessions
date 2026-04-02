@@ -57,3 +57,7 @@
 57.	"NC_070325.1" : "Begonia meyeri-johannis voucher RBGE2013122"
 58.	"NC_070326.1" : "Begonia microsperma voucher Peng20259"
 59.	"NC_070328.1" : "Begonia oxyloba voucher RBGE19982761"
+
+Outgroups
+1. "NC_000932.1" : "Arabidopsis thaliana"
+2. "NC_007144.1" : "Cucumis sativus"
