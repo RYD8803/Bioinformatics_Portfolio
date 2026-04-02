@@ -19,7 +19,7 @@ For my final Bachelor Biotechnology Project, I was tasked to do a positive selec
 
 ### List of Begonia Species
 - 59 Begonia chloroplast genomes from NCBI
-(https://github.com/RYD8803/Bioinformatics_Portfolio_Rafael8803/blob/Begonia-Research/List%20of%20Accessions)
+[Full Accessions](https://github.com/RYD8803/Bioinformatics_Portfolio_Rafael8803/blob/Begonia-Research/List%20of%20Accessions)
 - Indonesian samples from Bogor Botanic Gardens
 - Species span Asian, African, and Neotropical lineages
 
