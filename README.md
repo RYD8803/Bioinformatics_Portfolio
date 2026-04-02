@@ -22,7 +22,7 @@ For my final Bachelor Biotechnology Project, I was tasked to do a positive selec
 - Indonesian samples from Bogor Botanic Gardens
 - Species span Asian, African, and Neotropical lineages
 
-
+![SNP Data Analysis](SNP_Data_Analysis.png)
 
 ## References
 Cock PJA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, Wilczynski B, et al. 2009. Biopython: freely available python tools for computational molecular biology and bioinformatics. Bioinformatics. 25(11):1422–1423. DOI:10.1093/bioinformatics/btp163.
