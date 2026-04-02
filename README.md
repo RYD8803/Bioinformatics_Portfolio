@@ -13,7 +13,9 @@ This project investigates adaptive evolution in chloroplast genes of Begonia spe
   - Glu224 and His560 are associated with semi-shade conditions  
   - Arg560 is associated with deep-shade environments  
 ![SNP Data Analysis](https://github.com/RYD8803/Bioinformatics_Portfolio_Rafael8803/blob/Begonia-Research/SNP%20data%20analysis.png?raw=true)
+
 Mutations at codons 224 and 560 in rpoC1 may influence protein stability and function, potentially affecting plastid-encoded RNA polymerase (PEP) activity.
+
 These changes could alter transcription efficiency under low-light conditions, contributing to adaptive evolution in deep-shade Begonia species.
 
 ## Methods
