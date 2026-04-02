@@ -2,13 +2,19 @@
 This portfolio showcases my bioinformatics research projects focused on evolutionary genomics and plant adaptation.
 My research work investigates adaptive evolution in chloroplast genes of Begonia species, integrating sequence analysis, phylogenetics, and SNP–environment association to identify genetic mechanisms underlying shade tolerance.
 
-## Project Overview Begonia Research (February 2024 - September 2025)
+## Begonia Research (February 2024 - September 2025)
 This project investigates adaptive evolution in chloroplast genes of Begonia species under different light environments (deep shade vs semi-shade). Using comparative genomics and SNP–environment association analysis, this study identifies genetic variants in rpoC1 that are significantly associated with shade adaptation.
 
 ### Key finding
-- SNP 671 A/C and SNP 1679 A/G in rpoC1 is the most significant associated with the shade adaptation on the Adjusted Residuals result. Allele A contributes to semi-shade adaptation, while allele C at site 671 or G at site 1679 contributes to deep shade adaptation.
-- Glu 224 and His 560 are significantly linked to Semi-shade, while Arg 560 is significantly linked to deep shade.
+- SNP 671 (A/C) and SNP 1679 (A/G) in rpoC1 show the strongest association with shade adaptation based on adjusted residual analysis.  
+  - Allele A is associated with semi-shade environments  
+  - Allele C (site 671) and G (site 1679) are associated with deep-shade environments  
+- Amino acid substitutions:
+  - Glu224 and His560 are associated with semi-shade conditions  
+  - Arg560 is associated with deep-shade environments  
 ![SNP Data Analysis](https://github.com/RYD8803/Bioinformatics_Portfolio_Rafael8803/blob/Begonia-Research/SNP%20data%20analysis.png?raw=true)
+Mutations at codons 224 and 560 in rpoC1 may influence protein stability and function, potentially affecting plastid-encoded RNA polymerase (PEP) activity.
+These changes could alter transcription efficiency under low-light conditions, contributing to adaptive evolution in deep-shade Begonia species.
 
 ## Methods
 - Sequence retrieval: NCBI GenBank
