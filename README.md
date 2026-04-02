@@ -5,8 +5,6 @@ Feel Free to look around my past projects! If you have any follow-up questions, 
 ## Begonia Research (February 2024 - September 2025)
 For my final Bachelor Biotechnology Project, I was tasked to do a positive selection analysis on Begonia DNA Chloroplast. Based on Xiong et al. (2023) study, there are eight genes that are detected positively selected which are: _rpoC1, rpoB, psbE, psbK, petA, rpl22, rpl2_, and _rps12_. I was tasked to do another positive selection analysis on Indonesian Begonia samples taken from Bogor Botanic Gardens (Kebun Raya Bogor) genes (partial _rpoC1_ and _petA_) in comparison with Asian Begonia's that are available in NCBI. 
 
-Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.9. were used to detect any site-specific positive selection (Yang et al. 2005; Yang 2007). To detect which site is positively selected, model = 0 (single dN/dS ratio (ω) is assumed for all branches), and Site models = M7 (beta) and M8 (beta & ω > 1) were used as the site model. Other parameters were set to default. Posterior probabilities that are significant (p > 0.05) was selected as a candidate for detecting SNP marker (Xiong et al. 2023). 
-
 ### List of Begonia Species
 
 1.	"NC_063512.1" : "Begonia arachnoidea"
@@ -69,16 +67,28 @@ Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.9. were used to detect any
 58.	"NC_070326.1" : "Begonia microsperma voucher Peng20259"
 59.	"NC_070328.1" : "Begonia oxyloba voucher RBGE19982761"
 
-### List of Begonia Species from Bogor Botanic Gardens
-1. Begonia cucullata
-2. Begonia mexicana
-3. Begonia hijauvenia
-4. Begonia Ivory White (B. hijauvenia ♀ × Begonia sp. ♂)
-5. Begonia Eternal Flames (B. hijauvenia ♀ × B. kudoensis ♂)
-6. Begonia isoptera
-7. Begonia Silver Pixie (Gamma-iradiated Begonia isoptera)
+## Methods
+### Parsing of shade adapted genes from Begonia Chloroplast DNA
+Complete Chloroplast DNA sequences from 30 Begonia were collected from GenBank NCBI database (https://www.ncbi.nlm.nih.gov/genbank/). Sequence of shade adapted genes alongside their corresponding intergenic spacer were parsed using BioPython ver. 1.8.4 in Google Collab (Cock et al. 2009). The intergenic regions that were parsed for this research were based on the adjacent genes located based on the chloroplast map (Figure 2). The sequences were then aligned with MUSCLE using MEGA11 (Tamura et al. 2021; Xiong et al. 2023).
+
+### Alignment and Phylogenetic Tree Building
+The sequences were then aligned using MUSCLE, and maximum likelihood phylogenetic tree was constructed in MEGA11 (Tamura et al. 2021). The alignment files were then used to construct a Maximum Likelihood Phylogeny tree in MEGA11 using Tamura-Nei substitution model with no bootstrapping, as bootstrapping was not performed due to the low divergence among sequences. (Tamura et al. 2021).
+
+### Positive Selection Analysis
+Phylogenetic Analysis Maximum Likelihood (PAML) ver 4.9. were used to detect any site-specific positive selection (Yang et al. 2005; Yang 2007). To detect which site is positively selected, model = 0 (single dN/dS ratio (ω) is assumed for all branches), and Site models = M7 (beta) and M8 (beta & ω > 1) were used as the site model. Other parameters were set to default. Posterior probabilities that are significant (p > 0.05) was selected as a candidate for detecting SNP marker (Xiong et al. 2023). 
+
+### Environmental Association Analysis for SNP Markers
+Begonia samples growth habit, habitat, and shade adaptation data were collected mainly from Plants of The World Online (https://powo.science.kew.org/ ), and Flora of China (http://www.efloras.org/ ) database. Any shade adaptation that is not recorded by both databases and other journal publications were inferenced ecologically based on their habitat. Analysis of potential SNP marker was performed using SPSS ver. 25. To determine which site fits the appropriate model, the nucleotide data was used in Fisher-Exact test, and Adjusted Residual test (Huang et al. 2023; Purcell et al. 2007).
 
 ## References
+Cock PJA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, Wilczynski B, et al. 2009. Biopython: freely available python tools for computational molecular biology and bioinformatics. Bioinformatics. 25(11):1422–1423. DOI:10.1093/bioinformatics/btp163.
+
+Huang X, Li J, Pang X, Zhu J, Pan J, Li Y, Tang J. 2023. Gene polymorphism and prediction of toxicity to platinum-based chemotherapy in patients with gynecologic cancer. Clinical and Translational Science. 16(12):2519–2529. DOI:10.1111/CTS.13642,.
+
+Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MAR, Bender D, Maller J, Sklar P, De Bakker PIW, Daly MJ, et al. 2007. PLINK: a tool set for whole-genome association and population-based linkage analyses. american journal of human genetics. 81(3):559. DOI:10.1086/519795.
+
+Tamura K, Stecher G, Kumar S. 2021. MEGA11: molecular evolutionary genetics analysis version 11. Molecular Biology and Evolution. 38(7):3022–3027. DOI:10.1093/molbev/msab120.
+
 Xiong C, Huang Y, Li Z, Wu L, Liu Z, Zhu W, Li J, Xu R, Hong X. 2023. Comparative chloroplast genomics reveals the phylogeny and the adaptive evolution of Begonia in China. BMC Genomics. 24(1). DOI:10.1186/s12864-023-09563-3. https://pubmed.ncbi.nlm.nih.gov/37891463/ 
 
 Yang Z. 2007. PAML 4: Phylogenetic analysis by maximum likelihood. Molecular Biology and Evolution. 24(8):1586–1591. DOI:10.1093/molbev/msm088. https://academic.oup.com/mbe/article/24/8/1586/1103731 
