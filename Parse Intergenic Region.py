@@ -103,3 +103,31 @@ def extract_many_adj_sequence(accession_list, output_path='', gene=None):
 
     print("=" * 50 + "\n")
     print(f"Finished fetching:\nSuccess: {success}\nFailures: {failures}")
+
+Accessions = ["NC_063512.1", "NC_065014.1", "NC_070310.1", "NC_073119.1", "NC_073117.1",
+"NC_056110.1", "NC_070315.1", "NC_061410.1", "NC_067030.1", "PQ675783.1", "NC_073120.1",
+"NC_046385.1", "NC_063513.1", "NC_065245.1", "NC_070321.1", "PQ572754.1", "NC_068748.1",
+"NC_073118.1", "PQ619426.1", "PQ675781.1", "OP618127.1", "NC_073122.1", "OR288087.1", "NC_045096.1",
+"NC_088496.1", "NC_070330.1", "NC_073123.1", "PQ619425.1", "NC_073121.1", "NC_047450.1", "PQ675782.1",
+"MZ580429.1", "NC_070304.1", "NC_070305.1", "NC_070306.1", "NC_070311.1", "NC_070312.1", "NC_070313.1",
+"NC_070314.1", "NC_070317.1", "NC_070318.1", "NC_070319.1", "NC_070322.1", "NC_070323.1", "NC_070324.1",
+"NC_070327.1", "NC_070329.1", "NC_070331.1", "NC_070332.1", "NC_070333.1", "NC_070334.1", "NC_070307.1",
+"NC_070308.1", "NC_070309.1", "NC_070316.1", "NC_070320.1", "NC_070325.1", "NC_070326.1", "NC_070328.1",
+"NC_000932.1", "NC_007144.1"]
+
+genes = ["rpoC1", "rpoB", "psbE", "psbK", "petA", "rpl2", "rpl22", "rps12"]
+
+# Create folder
+import os
+folder_name = "C:\\Users\\Regina Maria\\OneDrive\\Desktop\\fasta_files_sequences"
+os.makedirs(folder_name, exist_ok=True)
+
+for gene_name in genes:
+    output = os.path.join(folder_name, f"Begonia_{gene_name}.fa")
+    print('\033[1m' + gene_name.upper() + '\033[0m')
+    
+    extract_many_adj_sequence(
+        Accessions,
+        output,
+        [gene_name]   
+    )
